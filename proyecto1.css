@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Reseteo básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #28a745;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limitar el ancho máximo */
+}
+
+h2 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #28a745;
+    color: white;
+    position: relative; /* Cambiar de absolute a relative */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+}
+
+.contenedor {
+    display: flex; /* Usar flexbox */
+    justify-content: center;
+}
+.item {
+    margin-right: 20px; /* Espaciado entre elementos */
+}
+
+/*codigo para las imagenes*/
+.imagen {
+    width: 20%; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border: 2px solid #8ef191; /* Borde alrededor de la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: transform 0.3s; /* Transición suave para efectos */
+}
+
+.mi-imagen:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    section {
+        margin: 10px;
+    }
+}
+button {
+    padding: 10px 15px;
+    background-color: #14ec47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
